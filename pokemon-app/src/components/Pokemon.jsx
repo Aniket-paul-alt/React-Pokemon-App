@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "../index.css"
 import { PokemonCards } from "./PokemonCards"
+import pokelogo from '../assets/pokelogo.webp'
 
 export const Pokemon = () => {
     const [pokemon, setPokemon] = useState([])
@@ -84,7 +85,9 @@ export const Pokemon = () => {
                         }
                     </ul>
                 </div>
-            </section>
+            </section><footer>
+                <img src={pokelogo} alt="" />
+            </footer>
         </>
     )
 }
